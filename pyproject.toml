@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bike-demand-forecast"
+version = "0"
+description = "Hourly bike-sharing demand forecasting model"
+requires-python = ">=3.10"
+
+dependencies = [ "numpy", "pandas", "scikit-learn", "matplotlib", "jupyter",]
+
+[tool.setuptools.packages.find]
+where = ["src"]
